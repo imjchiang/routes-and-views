@@ -9,7 +9,7 @@ app.set("view engine", "ejs");
 app.get("/", (req, res) =>
 {
     //express will look inside views folder by default for an ejs file with this name
-    res.render("index");
+    res.render("index", {name: "Sterling Archer", age: 35});
     //res.sendFile(__dirname + "/views/index.html");
 });
 

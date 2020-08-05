@@ -6,7 +6,21 @@
     <title>HOME</title>
 </head>
 <body>
-    <h1>This is the Home Page</h1>
-    
+    <h1>This is the Home Page, <%= name%></h1>
+    <% let dogAge = age * 7 %> 
+    <h2>You are <%= dogAge %> in dog years 屋!</h2>
+    <!-- not displaying onto the page, no equal sign -->
+    <% 
+        let status;
+        if(dogAge < 100) 
+        {
+            status = "young";
+        } 
+        else 
+        { 
+            status = "old";
+        } 
+    %>
+    <h3>This means you are <%= status %>!</h3>
 </body>
 </html>
